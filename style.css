@@ -1,0 +1,60 @@
+*{box-sizing: border-box;}
+
+/* Use positioning to fix the header to the top of the page. It should take up 100% of the available space and not cover any of the content below. Give the header a background color of **cyan**. */
+
+header{
+    width: 100%;
+    background-color: cyan;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.list{
+    margin-top: 100px;
+}
+
+/* In the "_List_" section, change the color of the second list item to blue. */
+
+.list li:nth-child(2){
+    color: blue;
+}
+
+/* In the "_Images_" section, make all of the images appear side-by-side. */
+
+.image{
+    display: inline;
+}
+
+/* Change the color of the `h3` elements to orange using rbg. The size of the text should be `2em` and appear as uppercase. */
+
+h3{
+    color: rgb(238, 115, 34);
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+/* Select all descendant links in the footer. Change the links' color to green on `visited` and red on `hover`. */
+
+
+ footer a:visited{
+ color: green;
+}
+
+footer a:hover{
+    color: red;
+}
+
+/* In the "_Box Model_" section, add `5 pixels` of `padding` to the section element that contains a paragraph and an image. */
+
+.box-model{
+    padding: 5px;
+    margin: 10%;
+    
+}
+
+/* In the "_Images_" section, add the image `tree.jpg` from the image folder. Make the image appear rounded. Add [this](https://caseytrees.org/tree-species/) link to the `tree.jpg` image. */
+
+.images>a :last-child{
+    border-radius: 50%;
+}
